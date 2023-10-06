@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BEAUFORT FOR LOL';
+    list-style: none;
+}
+
+body{
+    background-color: #0A1428;
+}
+
+.page-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;  
+}
+
+.image-logo {
+    width: 500px;
+    margin-right: 13rem;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: #C89B3C;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.name_input{
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+    color: #C89B3C;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #CDFAFA;
+    border: none;
+}
+
+.login_button {
+    background-color: #C8AA6E;
+    color: #32281E;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    margin-bottom: 150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+.login_button:disabled {
+    background-color: #A09B8C;
+    color: #AAA;
+    cursor: auto;
+}
+
+/* .login_button:active {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(2px);
+} */
+

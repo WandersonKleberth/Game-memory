@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BEAUFORT FOR LOL';  
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+    background-image: url(../img/paisagem.jpg);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'BEAUFORT FOR LOL';
+    font-weight: bold;
+    font-size: 1.2em;
+    gap: 100px;
+}
+
+body {
+    background-color: #0A1428;
+    /* height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center; */
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin: 0px auto;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    /* background-color: #333; */
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    border: 1px solid #785A28;
+    background-color: #CCC;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0A323C;
+    background-size: cover;
+    background-position: center;
+    color: #C8AA6E;
+    border-radius: 5px;
+    border: 1px solid #C89B3C;
+    /* font-weight: bold; */
+    text-shadow: 1px 1px 2px black;
+    transition: all 400ms ease;
+}
+
+.front {
+    background-image: url(../img/Persons/riven\ sklin.png);
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url(../img/league\ card.png);
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabledCard {
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+/* .victory-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Inicialmente, oculte o contêiner da vitória
+}*/
